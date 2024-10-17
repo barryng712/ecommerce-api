@@ -11,10 +11,6 @@ This is a RESTful API for an eCommerce application that allows users to register
   - [Authentication](#authentication)
   - [Products](#products)
   - [Cart](#cart)
-- [Testing](#testing)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
 ## Features
 
