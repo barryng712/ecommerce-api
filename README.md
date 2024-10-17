@@ -2,16 +2,6 @@
 
 This is a RESTful API for an eCommerce application that allows users to register, log in, manage products, add items to a shopping cart, and process payments using Stripe.
 
-## Table of Contents
-
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [API Endpoints](#api-endpoints)
-  - [Authentication](#authentication)
-  - [Products](#products)
-  - [Cart](#cart)
-
 ## Features
 
 - User registration and login
