@@ -11,6 +11,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
             return res.status(400).json({mesage: 'cart is empty'});
         }
 
+        
         const totalAmount = cart.products.reduce((acc, item) =>{
             return acc + item.product.price * item.quantity;
         }, 0);
@@ -21,7 +22,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
             payment_method_types: ['card'],
         });
 
-        res.json({message: 'payment successfully'})
+        res.json({message: 'payment successfully', paymentIntent})
     }catch(error){
         console.error('error creating payment intent: ', error);
         res.status(500).json({message: 'payment initiation failed'});
